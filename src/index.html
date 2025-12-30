@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Quiz App</h1>
+
+      <!-- Start Screen -->
+      <div id="start-screen" class="screen active">
+        <p>Test your knowledge with a quick quiz!</p>
+        <button id="start-btn">Start Quiz</button>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quiz-screen" class="screen">
+        <div class="quiz-header">
+          <span id="question-number">Question 1/10</span>
+          <span id="score">Score: 0</span>
+        </div>
+
+        <h2 id="question-text"></h2>
+        <div id="answers" class="answers"></div>
+        <button id="next-btn" disabled>Next</button>
+      </div>
+
+      <!-- Result Screen -->
+      <div id="result-screen" class="screen">
+        <h2>Quiz Complete 🎉</h2>
+        <p id="final-score"></p>
+        <button id="restart-btn">Restart Quiz</button>
+      </div>
+    </div>
+
+    <script type="module" src="./index.mjs"></script>
+  </body>
+</html>
